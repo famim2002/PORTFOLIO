@@ -1,0 +1,144 @@
+/* ..................    FONT LNKS  START  .................... */
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+/* ..................    FONT LNKS  END  .................... */
+
+
+/* ???????????????     COMMON  CSS  START     ?????????????? */
+
+a {
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 !important;
+  padding: 0;
+  outline: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --main_font:  "Jost", sans-serif;
+  --primary_color: #E9BB55;
+  --sceondry_color: #003b3c;
+  --tag_color: #ddf2e1;
+  --base_color: #F7F3E8;
+  --regular_font_color: #706F6B;
+  --fff_white: #fff;
+  --000_black: #000;
+}
+
+.common_heading h2 {
+  font-size: 80px;
+  font-weight: 500;
+  font-family: var(--header_font);
+  color: var(--fff_white);
+  letter-spacing: 1PX;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+section{
+  overflow: hidden;}
+
+/* ???????????????     COMMON  CSS  END     ?????????????? */
+
+/* (((((((((((((((((     CSS START     )))))))))))))))) */
+
+
+body{
+  background-image: url("../img/thumb-1920-526585.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.multiplication{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: auto;
+width: 300px !important;
+
+}
+
+.num{
+  height: 30px;
+  width: 250px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 2px dotted;
+}
+
+.num:focus-visible{
+  outline: none !important;
+}
+
+
+
+
+/* :::::::<<<<<<<<<<      CSS END     >>>>>>>>>>:::::: */
+
+
+/* (((((((((((((((((     CSS START     )))))))))))))))) */
+
+
+
+/* :::::::<<<<<<<<<<      CSS END     >>>>>>>>>>:::::: */
+
+
+/* (((((((((((((((((     CSS START     )))))))))))))))) */
+
+
+
+/* :::::::<<<<<<<<<<      CSS END     >>>>>>>>>>:::::: */
+
+
+/* (((((((((((((((((     CSS START     )))))))))))))))) */
+
+
+
+/* :::::::<<<<<<<<<<      CSS END     >>>>>>>>>>:::::: */
+
+
+/* (((((((((((((((((     CSS START     )))))))))))))))) */
+
+
+
+/* :::::::<<<<<<<<<<      CSS END     >>>>>>>>>>:::::: */
+
+
+/* (((((((((((((((((     CSS START     )))))))))))))))) */
+
+
+
+/* :::::::<<<<<<<<<<      CSS END     >>>>>>>>>>:::::: */
+
+
+/* (((((((((((((((((     CSS START     )))))))))))))))) */
+
+
+
+/* :::::::<<<<<<<<<<      CSS END     >>>>>>>>>>:::::: */
+
+
+/* (((((((((((((((((     CSS START     )))))))))))))))) */
+
+
+
+/* :::::::<<<<<<<<<<      CSS END     >>>>>>>>>>:::::: */
+
+
+
