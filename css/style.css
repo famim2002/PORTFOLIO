@@ -1,6 +1,6 @@
 /* ..................    FONT LNKS  START  .................... */
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 /* ..................    FONT LNKS  END  .................... */
 
 
@@ -37,6 +37,7 @@ ol {
 
 :root {
   --main_font:  "Jost", sans-serif;
+  --header_font:  "Ubuntu", sans-serif;
   --primary_color: #E9BB55;
   --sceondry_color: #003b3c;
   --tag_color: #ddf2e1;
@@ -67,14 +68,14 @@ section{
   align-items: center;
   gap: 4px;
   padding: 16px 36px;
-  border: 4px solid;
+  border: px solid;
   border-color: transparent;
   font-size: 16px;
   background-color: inherit;
   border-radius: 100px;
   font-weight: 600;
-  color: greenyellow;
-  box-shadow: 0 0 0 2px greenyellow;
+  color: #212121;
+  box-shadow: 0 0 0 2px rgb(32, 32, 31);
   cursor: pointer;
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
@@ -83,7 +84,7 @@ section{
 .animated-button svg {
   position: absolute;
   width: 24px;
-  fill: greenyellow;
+  fill: rgb(22, 22, 22);
   z-index: 9;
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -103,7 +104,7 @@ section{
   transform: translate(-50%, -50%);
   width: 20px;
   height: 20px;
-  background-color: greenyellow;
+  background-color: #212121;
   border-radius: 50%;
   opacity: 0;
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
@@ -118,7 +119,7 @@ section{
 
 .animated-button:hover {
   box-shadow: 0 0 0 12px transparent;
-  color: #212121;
+  color: #e7e4e4;
   border-radius: 12px;
 }
 
@@ -135,12 +136,12 @@ section{
 }
 
 .animated-button:hover svg {
-  fill: #212121;
+  fill: #e7e7e7;
 }
 
 .animated-button:active {
   scale: 0.95;
-  box-shadow: 0 0 0 4px greenyellow;
+  box-shadow: 0 0 0 4px #242526;
 }
 
 .animated-button:hover .circle {
@@ -168,12 +169,11 @@ section{
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-nav{
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  
-  background: #242526;
+nav {
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	background: #171818b9;
 }
 nav .wrapper{
   position: relative;
@@ -202,8 +202,9 @@ nav .wrapper{
 .nav-links li a{
   color: #f2f2f2;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
+  font-family: var(--main_font);
   padding: 9px 15px;
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -463,10 +464,14 @@ nav input{
   align-items: center;
   display: flex;
 }
+
 .text_banner {
-  font-weight: 100;
-  font-size: 28px;
-  color: #fafafa;
+  font-size: 150px;
+  font-weight: 500;
+  font-family: var(--header_font);
+  color: #ffffff;
+  /* -webkit-text-stroke: 5px #c4c3c2; */
+  
 }
 .dud {
   color: #757575;
@@ -520,7 +525,7 @@ nav input{
 /* (((((((((((((((((   SKILLS  CSS START     )))))))))))))))) */
 
 #SKILLS header {
-  background: url("../img/skills-back.jpg") no-repeat fixed center / cover;
+  background: url("../img/skill-back.jpg") no-repeat fixed center / cover;
   
   text-align: center;
   height: 100vh;
@@ -531,6 +536,13 @@ nav input{
   transform: translateY(-320px);
 }
 
+#SKILLS .row_a {
+  padding: 150px 0 0;
+}
+
+#SKILLS .row_b {
+  padding: 150px 0 0;
+}
 
 
 .container-fluid {
@@ -554,8 +566,69 @@ nav input{
   color: #918f8f;
 } 
 
+.skills_logo{
+  width: fit-content;
+  margin: auto;
+  transition: .2s;
+}
 
 
+.skills_img img{
+  width: 200px;
+  transition: all linear .1s;
+}
+
+.java_logo{
+  padding-top: 55px;
+  
+}
+
+.hover_logo{
+  transform: all linear .2s;
+
+}
+
+.hover_logo img {
+  position: absolute;
+	transform: translate(-101px , -270px);
+	width: 200px;
+  opacity: 0;
+  
+  transition: all linear .3s;
+}
+
+
+.skills_logo:hover .skills_img img {
+  
+  opacity: 0;
+}
+
+.skills_logo:hover .hover_logo img {
+  
+  opacity: 1;
+}
+
+
+.java {
+	transform: translate(0px , 55px) !important;
+}
+
+.photoshop {
+	transform: translate(0px , 72px) !important;
+}
+
+.premier {
+  
+  transform: translate(0px , 72px) !important;
+}
+
+.figma {
+	  transform: translate(0px , 72px) !important;
+}
+
+.java {
+	transform: translate(0px , 55px) !important;
+}
 
 /* :::::::<<<<<<<<<<   SKILLS   CSS END     >>>>>>>>>>:::::: */
 
