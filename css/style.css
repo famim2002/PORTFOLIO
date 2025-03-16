@@ -1,0 +1,267 @@
+/* ..................    FONT LNKS  START  .................... */
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* ..................    FONT LNKS  END  .................... */
+
+
+/* ???????????????     COMMON  CSS  START     ?????????????? */
+
+a {
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 !important;
+  padding: 0;
+  outline: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --header_font:"Dosis", sans-serif;
+  --descrip_font: "Sen", serif;
+  --primary_color: #252523;
+  --sceondry_color: #FEFDF8;
+  --tag_color: #C59452;
+  --base_color: #F7F3E8;
+  --regular_font_color: #706F6B;
+  --fff_white: #fff;
+  --000_black: #000;
+}
+
+.common_heading h2 {
+  font-size: 80px;
+  font-weight: 500;
+  font-family: var(--header_font);
+  color: var(--fff_white);
+  letter-spacing: 1PX;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+section{
+  overflow: hidden;}
+
+/* ???????????????     COMMON  CSS  END     ?????????????? */
+
+/* (((((((((((((((((   NAV  CSS START     )))))))))))))))) */
+
+
+
+
+/*color changing and resposive navbar with burger menu*/
+
+#nav-img {
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+}
+
+#nav-img img {
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  position: fixed;
+  top: 0;
+/*  border-bottom: 1px solid rgb(122, 85, 67);*/
+  left: 0;
+  width: 100%;
+  transition: 0.2s all ease-in;
+}
+
+.nav-scroll {
+  min-height: 10vh;
+  background-color: rgba(17, 18, 17, 0.814);
+-webkit-box-shadow: 0px 4px 44px -13px rgba(79,78,79,1);
+-moz-box-shadow: 0px 4px 44px -13px rgba(79,78,79,1);
+box-shadow: 0px 4px 44px -13px rgba(79,78,79,1);
+}
+
+.logo {
+  color: rgb(204, 204, 204);
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.logo h4 {
+  margin: 0;
+}
+.m{
+width:1200px;
+margin:0 auto;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: /*rgb(204, 204, 204)*/
+  white;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-links li {
+  list-style-type: none;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s all ease;
+  padding-bottom: 2px;
+}
+
+.nav-links li:hover {
+  border-bottom: 2px solid rgb(204, 204, 204);
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  background-color: rgb(204, 204, 204);
+}
+
+@media screen and (max-width:1000px) {
+  .nav-links {
+      width: 40%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  body {
+      overflow-x: hidden;
+  }
+  .nav-links {
+      position: absolute;
+      top: 10vh;
+      right: 0;
+      height: 92vh;
+      width: 50%;
+      background-color: rgba(17, 18, 17, 0.814);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: translate(100%);
+      transition: transform 0.5s ease-in;
+  }
+  .burger {
+      display: block;
+  }
+  .nav-links-new-height{
+     top: 10vh;
+  }
+}
+
+
+
+.nav-active {
+  transform: translate(0);
+}
+
+/* .nav-new-height{
+  position: absolute;
+  top: 
+} */
+
+/* navbar end here */
+
+
+/* :::::::<<<<<<<<<<    NAV  CSS END     >>>>>>>>>>:::::: */
+
+
+/* (((((((((((((((((   BANNER  CSS START     )))))))))))))))) */
+#BANNER{
+  background-image: url('../img/banner_back.jpg');
+  padding: 500px 0 500px ;
+}
+
+.text {
+  font-weight: 100;
+  font-size: 28px;
+  color: #fafafa;
+}
+.dud {
+  color: #757575;
+}
+
+
+
+/* :::::::<<<<<<<<<<      CSS END     >>>>>>>>>>:::::: */
+
+
+/* (((((((((((((((((     CSS START     )))))))))))))))) */
+ 
+
+
+
+
+
+/* :::::::<<<<<<<<<<      CSS END     >>>>>>>>>>:::::: */
+
+
+/* (((((((((((((((((     CSS START     )))))))))))))))) */
+
+
+
+/* :::::::<<<<<<<<<<      CSS END     >>>>>>>>>>:::::: */
+
+
+/* (((((((((((((((((     CSS START     )))))))))))))))) */
+
+
+
+/* :::::::<<<<<<<<<<      CSS END     >>>>>>>>>>:::::: */
+
+
+/* (((((((((((((((((     CSS START     )))))))))))))))) */
+
+
+
+/* :::::::<<<<<<<<<<      CSS END     >>>>>>>>>>:::::: */
+
+
+/* (((((((((((((((((     CSS START     )))))))))))))))) */
+
+
+
+/* :::::::<<<<<<<<<<      CSS END     >>>>>>>>>>:::::: */
+
+
+/* (((((((((((((((((     CSS START     )))))))))))))))) */
+
+
+
+/* :::::::<<<<<<<<<<      CSS END     >>>>>>>>>>:::::: */
+
+
+
