@@ -99,8 +99,13 @@ class TextScramble {
   
   
   const phrases = [
-    'Judgement',
-    'Reacting'
+    `hi i'm`,
+    `famim hayat`,
+    `a profssional`,
+    `front-end developer`,
+    `ui/ux designer`,
+    `photoshop editer`
+    
   ]
   
   const el = document.querySelector('.text')
